@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const ProductSchema =  mongoose.Schema(
+const ProductSchema = mongoose.Schema(
   {
     title: { type: String, required: true, unique: true },
     desc: { type: String, required: true, },
@@ -9,7 +9,7 @@ const ProductSchema =  mongoose.Schema(
     size: { type: String },
     color: { type: String },
     price: { type: Number, required: true },
-    
+
   },
   { timestamps: true }
 );

@@ -51,6 +51,7 @@ export const getUser = async (req, res) => {
 
 //GET ALL USER
 export const getAllUser = async (req, res) => {
+    // latest five user 
     const query = req.query.new;
     try {
         const users = query

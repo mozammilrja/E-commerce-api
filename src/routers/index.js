@@ -9,7 +9,7 @@ import PaymentRoute from "./payment/payment.router.js"
 const rootRouter = express.Router();
 
 rootRouter.use("/api/auth", AuthRouter);
-rootRouter.use("/api/user", UserRouter);
+rootRouter.use("/api/users", UserRouter);
 rootRouter.use("/api/carts", CartRouter);
 rootRouter.use("/api/orders", OrderRouter);
 rootRouter.use("/api/products", ProductRoute)
